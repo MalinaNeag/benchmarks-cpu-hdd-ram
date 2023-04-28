@@ -16,11 +16,11 @@ The timing package provides a way to measure the execution time of a particular 
 
 ### Testbench
 
-The testbench package provides a way to run a test for a particular algorithm or data structure.
+The testbench package provides a way to run a test for a particular benchmark.
 
 ### Bench
 
-The bench package provides the algorithms for the benchmarks.
+The bench package provides the algorithms for benchmarks.
 
 ## Types of Benchmarks
 
