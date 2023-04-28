@@ -1,4 +1,4 @@
-# Benchmarking Project
+# Benchmarking Project (Computer Organization laboratory)
 
 This project is a faculty project implemented in Java that includes several types of benchmarks. A benchmark is a standardized test used to evaluate the performance of a system, such as a CPU or a computer program. Benchmarks are important because they provide a quantitative measure of performance, which can be used to compare different systems or to identify performance bottlenecks.
 
