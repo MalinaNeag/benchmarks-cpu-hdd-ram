@@ -1,9 +1,11 @@
+/**
+ * The TestCPUThreadedHashing class is used to test the CPUThreadedHashing benchmark class. It creates an instance of the benchmark class and runs it with the given parameters.
+ * The result of the benchmark is then printed to the console using the ConsoleLogger class.
+ */
 package testbench;
 
-import bench.DemoBenchmark;
 import bench.IBenchmark;
 import bench.cpu.CPUThreadedHashing;
-import bench.cpu.CPUThreadedHashing2;
 import logging.ILogger;
 import logging.TimeUnit;
 import timing.Timer;
@@ -36,3 +38,5 @@ public class TestCPUThreadedHashing {
         log.write("Result is", bench.getResult());
     }
 }
+
+

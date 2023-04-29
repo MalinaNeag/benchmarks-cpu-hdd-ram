@@ -2,38 +2,86 @@ package bench.cpu;
 
 import bench.IBenchmark;
 
+/**
+ * This class provides a benchmark implementation for fixed-point arithmetic on CPUs.
+ */
 public class CPUFixedPoint implements IBenchmark {
 
     private long maxIterations;
     private EnumOptionsFixedPoint option;
 
+    /**
+     * Initializes the benchmark with the given parameters.
+     *
+     * @param params An array containing the maximum number of iterations and the benchmark option.
+     */
     @Override
     public void initialize(Object... params) {
         maxIterations = (long) params[0];
         option = (EnumOptionsFixedPoint) params[1];
     }
 
+    /**
+     * Cleans up any resources used by the benchmark.
+     */
+    @Override
+    public void clean() {
+
+    }
+
+    /**
+     * Cancels the benchmark.
+     */
+    @Override
+    public void cancel() {
+
+    }
+
+    /**
+     * Warms up the benchmark by running it several times.
+     */
+    @Override
+    public void warmUp() {
+
+    }
+
+    @Override
+    public Object getResult() {
+        return null;
+    }
+
+    /**
+     * Runs the benchmark with the given parameters.
+     *
+     * @param params An array containing optional parameters for the benchmark.
+     */
     @Override
     public void run(Object... params) {
-/*        switch (option) {
+        switch (option) {
             case IntegerArithmeticTest -> integerArithmetic();
             case BranchingTest -> branching();
             case ArrayAccessAndAssignment -> arrayOperations();
             default -> {
             }
         }
-*/
+
     }
 
+    /**
+     * Runs the benchmark with default parameters.
+     */
     @Override
     public void run() {
         run(0);
     }
 
+    /**
+     * Performs integer arithmetic operations.
+     */
     private void integerArithmetic(){
 
         int[] num = {0, 1, 2, 3};
-        int i = 0;
+        int i;
         int j = 1;
         int k = 2;
         int l = 3;
@@ -48,6 +96,10 @@ public class CPUFixedPoint implements IBenchmark {
         }
 
     }
+
+    /**
+     * Performs branching operations.
+     */
     public void branching() {
 
         int[] num = {0, 1, 2, 3};
@@ -72,6 +124,9 @@ public class CPUFixedPoint implements IBenchmark {
         }
     }
 
+    /**
+     * Performs array access and assignment operations.
+     */
     private void arrayOperations() {
 
         int size = 4;
@@ -94,30 +149,6 @@ public class CPUFixedPoint implements IBenchmark {
             c[3] = a[d[0]];
             d[0] = a[1];
         }
-
     }
-
-    @Override
-    public void clean() {
-
-    }
-
-    @Override
-    public void cancel() {
-
-    }
-
-    @Override
-    public void warmUp() {
-        for(int i = 0; i < 3; i++) {
-            this.run();
-        }
-
-    }
-
-    @Override
-    public Object getResult() {
-        return null;
-    }
-
 }
+

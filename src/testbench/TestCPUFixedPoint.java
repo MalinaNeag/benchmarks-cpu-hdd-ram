@@ -1,3 +1,10 @@
+/**
+ * This class provides a main method to run the CPUFixedPoint benchmark and output the results to the console.
+ * It uses a Timer object to measure the elapsed time and a ConsoleLogger object to write the results to the console.
+ * The workload and benchmark options are defined at the beginning of the main method.
+ * It then runs the benchmark and calculates the number of operations per second (OPS) and million operations per second (MOPS).
+ * The results are written to the console using the ConsoleLogger object.
+ */
 package testbench;
 
 import bench.IBenchmark;
@@ -10,6 +17,7 @@ import timing.ITimer;
 import timing.Timer;
 
 public class TestCPUFixedPoint {
+
     public static void main(String[] args) {
 
         ITimer timer = new Timer();
@@ -42,12 +50,10 @@ public class TestCPUFixedPoint {
                 operations = 0;
                 break;
         }
-        //log.writeTime("Finished in ",  stopTime, TimeUnit.Sec);
-        double seconds= TimeUnit.Sec.timeConversion(stopTime);
 
-        double OPS = operations/seconds;
-
-        double MOPS = OPS/1e6;
+        double seconds = TimeUnit.Sec.timeConversion(stopTime);
+        double OPS = operations / seconds;
+        double MOPS = OPS / 1e6;
 
         log.write("\nMOPS: ", MOPS);
         log.write("\nOPS: ", OPS);

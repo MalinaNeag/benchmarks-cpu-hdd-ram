@@ -88,9 +88,13 @@ public class DemoBenchmark implements IBenchmark {
 
     }
 
+    /**
+     * Gets the result of the benchmark.
+     * @return the sorted array of integers.
+     */
     @Override
     public Object getResult() {
-        return null;
+        return array;
     }
 
 }

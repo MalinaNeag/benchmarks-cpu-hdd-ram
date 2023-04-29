@@ -9,7 +9,16 @@ import logging.TimeUnit;
 import timing.ITimer;
 import timing.Timer;
 
+/**
+ * Test class for the CPURecursionLoopUnrolling benchmark.
+ */
+
 public class TestCPURecursionLoopUnrolling {
+    /**
+     * Main method that runs the benchmark with the specified workload and loop unrolling factor.
+     *
+     * @param args an array of two arguments: the workload and the loop unrolling factor
+     */
     public static void main(String[] args) {
 
         long prime;
@@ -46,4 +55,5 @@ public class TestCPURecursionLoopUnrolling {
 
     }
 }
+
 

@@ -1,3 +1,13 @@
+/**
+
+ The CPUThreadedHashing class implements the IBenchmark interface for a multithreaded hash code breaker.
+ Given a hash code, the class attempts to find a corresponding string using a brute-force search strategy.
+ The search space is the set of all possible strings of length up to a specified maximum, constructed using
+ the English alphabet.
+ This class uses an ExecutorService to manage a thread pool, with each thread being assigned a task to
+ compute the hash of a particular string. The class uses two stop conditions: (1) the length of the strings
+ being searched exceeds a maximum specified length, and (2) a hash code corresponding to a string is found.
+ */
 package bench.cpu;
 
 import java.util.Random;
@@ -27,6 +37,14 @@ public class CPUThreadedHashing implements IBenchmark {
                 "Method not implemented. Use run(Object) instead");
     }
 
+    /**
+     * This method runs the benchmark to find a string that hashes to a given hash code.
+     *
+     * @param options an array of three parameters:
+     * - maxTextLength: the maximum length of the string to be searched
+     * - nThreads: the number of threads to use in the thread pool
+     * - hashCode: the target hash code
+     */
     @Override
     public void run(Object... options) {
 
@@ -85,11 +103,21 @@ public class CPUThreadedHashing implements IBenchmark {
 
     }
 
+    /**
+     * Returns the string that was found to produce the target hash code.
+     *
+     * @return the string that was found to produce the target hash code
+     */
     @Override
     public String getResult() {
         return String.valueOf(result);
     }
 
+    /**
+     * The HashBreakerTask class is a Runnable that is used to compute the hash of a given string and compare it
+     * to a target hash code. If a match is found, the task sets the running flag to false and saves the password
+     * as the result to be printed on screen.
+     */
     class HashBreakerTask implements Runnable {
 
         // used to compute hashes from strings

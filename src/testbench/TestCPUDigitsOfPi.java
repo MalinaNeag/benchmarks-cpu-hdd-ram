@@ -37,13 +37,11 @@ public class TestCPUDigitsOfPi{
             //log.writeTime("Run " + i + ": ", time, timeUnit);
             log.write(time);
         }
-
-        //log.writeTime(timer.stop(), timeUnit);
-    /*
-    //The value for Pi:
-    BigDecimal result = ((CPUDigitsOfPi)bench).getResult();
-    log.write("Pi is: "+ result);
-     */
+        /*
+        The value for Pi:
+        BigDecimal result = ((CPUDigitsOfPi)bench).getResult();
+        log.write("Pi is: "+ result);
+        */
     }
 
 }
