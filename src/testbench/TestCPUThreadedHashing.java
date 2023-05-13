@@ -22,14 +22,15 @@ public class TestCPUThreadedHashing {
 
         int maxLength = 10;
         int nThreads = 8;
-        int hashCode = 524381996; //frodo 3 sec
-        //int hashCode = 52703576; //airbnb 45 sec
-        //int hashCode = 605107138; //brasov 51 sec
+        //int hashCode = 524381996; //frodo 3 sec
+        //int hashCode = 52703576; //airbnb 12 sec
+        //int hashCode = 605107138; //brasov 24 sec
 
         //Homework
-        //int hashCode = 1018655712; //break 1.444999 sec
-        //int hashCode = 317266982; //direct 52.5079358 sec
+        //int hashCode = 1018655712; //break 0.729486901 sec
+        //int hashCode = 317266982; //direct 34.060774401 sec
 
+        int hashCode = 940791187;
         timer.start();
         bench.run(maxLength, nThreads, hashCode);
         long time = timer.stop();

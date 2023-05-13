@@ -48,6 +48,9 @@ The Threaded Roots benchmark measures the performance of threaded programming. I
 
 The Dynamic Workload benchmark measures the performance of dynamic workload using threads. It uses brute force attack to decipher a given hash.
 
+## HDD Testing
+A flexible idea for measuring the writing speed of Hard Disk Drive. Two variants of the benchmark are provided (fixed file size 'fs' and fixed buffer size 'fb').
+
 ## Conclusion
 
 This project provides a comprehensive benchmarking framework for measuring the performance of different algorithms and data structures. 
