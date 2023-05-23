@@ -37,7 +37,7 @@ public class HDDWriteSpeed implements IBenchmark {
         String option = (String) options[0];
         Boolean clean = (Boolean) options[1];
 
-        String prefix = "D:\\IdeaProjects\\dotFiles";
+        String prefix = "D:\\IdeaProjects";
         String suffix = ".dat";
         int minIndex = 0;
         int maxIndex = 8;

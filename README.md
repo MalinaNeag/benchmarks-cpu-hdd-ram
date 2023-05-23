@@ -28,29 +28,41 @@ The following types of benchmarks are performed in this project:
 
 ## CPU Testing
 
-### Generating the PI digits with Gauss Legendre. 
+- ### Generating the PI digits with Gauss Legendre
 
 This benchmark measures the performance of the CPU in terms of floating point arithmetic and computational efficiency.
 
-### Fixed Point Arithmetic (MOPS)
+- ### Fixed Point Arithmetic (MOPS)
 
 The Fixed Point Arithmetic benchmark measures the performance of integer arithmetic, arrays, and branching. It calculates the number of millions of operations per second (MOPS) that the CPU can perform.
 
-### Recursion and Caching Testing 
+- ### Recursion and Caching Testing 
 
 The Recursion and Caching Testing benchmark uses the loop unrolling technique to improve performance.
 
-### Threaded Roots using Newton's Formula
+- ### Threaded Roots using Newton's Formula
 
 The Threaded Roots benchmark measures the performance of threaded programming. It uses Newton's formula to calculate the square roots of a number.
 
-### Dynamic Workload with Threads
+- ### Dynamic Workload with Threads
 
 The Dynamic Workload benchmark measures the performance of dynamic workload using threads. It uses brute force attack to decipher a given hash.
 
 ## HDD Testing
-A flexible idea for measuring the writing speed of Hard Disk Drive. Two variants of the benchmark are provided (fixed file size 'fs' and fixed buffer size 'fb').
+ 
+- ### HDD Writing Speed 
+
+The HDD Writing Speed Benchmark provides two variants for measuring the writing speed of a Hard Disk Drive (HDD): one with a fixed file size ('fs') and another with a fixed buffer size ('fb').
+
+- ### HDD Random Access 
+
+The HDD Random Access benchmark provides methods for performing random access operations on a hard disk drive (HDD) file. It allows reading and writing of fixed-size data or performing operations for a fixed time.
+
+## RAM Testing
+
+The Virtual Memory Benchmark maps a large file into RAM, thereby triggering the virtual memory mechanism. It performs read and write operations on the file, allowing measurement of access speeds.
 
 ## Conclusion
 
-This project provides a comprehensive benchmarking framework for measuring the performance of different algorithms and data structures. 
+This project offers a comprehensive benchmarking framework designed to evaluate the performance of various algorithms and data structures across different components, including the CPU, RAM, and HDD.
+The benchmarks enable users to analyze and compare the performance under various scenarios, providing valuable insights into their efficiency and suitability for specific applications.

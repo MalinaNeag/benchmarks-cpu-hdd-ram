@@ -21,7 +21,7 @@ public class FileWriter {
     private static final int MIN_BUFFER_SIZE = 1024 * 1; // KB
     private static final int MAX_BUFFER_SIZE = 1024 * 1024 * 64; // MB
     private static final long MIN_FILE_SIZE = 1024 * 1024 * 1; // MB
-    private static final long MAX_FILE_SIZE = 1024 * 1024 * 512; // MB
+    private static final long MAX_FILE_SIZE = 1024 * 1024 * 1024L; // GB
     private Timer timer = new Timer();
     private Random rand = new Random();
     private double benchScore;
@@ -87,7 +87,7 @@ public class FileWriter {
         while ((currentFileSize <= MAX_FILE_SIZE) && (fileIndex <= maxIndex - minIndex)) {
             fileName = filePrefix + fileIndex + fileSuffix;
             writeFile(fileName, bufferSize, currentFileSize, clean);
-            currentFileSize*=2;
+            currentFileSize*=10;
             fileIndex++;
         }
 
