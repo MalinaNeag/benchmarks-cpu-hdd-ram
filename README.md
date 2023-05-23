@@ -52,7 +52,7 @@ The Dynamic Workload benchmark measures the performance of dynamic workload usin
  
 - ### HDD Writing Speed 
 
-The HDD Writing Speed Benchmark provides two variants for measuring the writing speed of a Hard Disk Drive (HDD): one with a fixed file size ('fs') and another with a fixed buffer size ('fb').
+The HDD Writing Speed Benchmark provides two variants for measuring the writing speed of a Hard Disk Drive (HDD): one with a fixed file size and another with a fixed buffer size.
 
 - ### HDD Random Access 
 
