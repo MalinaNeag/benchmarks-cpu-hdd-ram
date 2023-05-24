@@ -26,13 +26,13 @@ The bench package provides the algorithms for benchmarks.
 
 The following types of tests are performed in this project:
 
-# 💻 *CPU Testing*
+## 💻 *CPU Testing*
 
 - ### Generating the PI digits with Gauss Legendre
 
 This benchmark measures the performance of the CPU in terms of floating point arithmetic and computational efficiency.
 
-- ### Fixed Point Arithmetic (MOPS)
+- ### Fixed Point Arithmetic
 
 The Fixed Point Arithmetic benchmark measures the performance of integer arithmetic, arrays, and branching. It calculates the number of millions of operations per second (MOPS) that the CPU can perform.
 
@@ -48,7 +48,7 @@ The Threaded Roots benchmark measures the performance of threaded programming. I
 
 The Dynamic Workload benchmark measures the performance of dynamic workload using threads. It uses brute force attack to decipher a given hash.
 
-# 💾 *HDD Testing*
+## 💾 *HDD Testing*
  
 - ### HDD Writing Speed 
 
@@ -59,6 +59,8 @@ The HDD Writing Speed Benchmark provides two variants for measuring the writing 
 The HDD Random Access benchmark provides methods for performing random access operations on a hard disk drive (HDD) file. It allows reading and writing of fixed-size data or performing operations for a fixed time.
 
 # 🧠 *RAM Testing*
+
+- ### Virtual Memory
 
 The Virtual Memory Benchmark maps a large file into RAM, thereby triggering the virtual memory mechanism. It performs read and write operations on the file, allowing measurement of access speeds.
 
