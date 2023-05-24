@@ -58,7 +58,7 @@ The HDD Writing Speed Benchmark provides two variants for measuring the writing 
 
 The HDD Random Access benchmark provides methods for performing random access operations on a hard disk drive (HDD) file. It allows reading and writing of fixed-size data or performing operations for a fixed time.
 
-# 🧠 *RAM Testing*
+## 🧠 *RAM Testing*
 
 - ### Virtual Memory
 
