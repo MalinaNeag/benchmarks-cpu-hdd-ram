@@ -6,19 +6,19 @@ This project is a faculty project implemented in Java that includes several type
 
 The project is implemented using a benchmarking framework that includes several packages:
 
-### 🖊️ Logging
+### Logging
 
 The logging package is responsible for logging the results of the benchmarks. 
 
-### ⏳ Timing
+### Timing
 
 The timing package provides a way to measure the execution time of a particular piece of code. It includes utilities for converting between different time units.
 
-### 🛠️ Testbench
+### Testbench
 
 The testbench package provides a way to run a test for a particular benchmark.
 
-### 🧮 Bench
+### Bench
 
 The bench package provides the algorithms for benchmarks.
 
